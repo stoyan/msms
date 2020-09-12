@@ -6,8 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "license": "MIT",
   "author": "Stoyan <ssttoo@ymail.com>",
   "dependencies": {
     "xml-js": "^1.6.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stoyan/msms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stoyan/msms/issues"
+  },
+  "homepage": "https://github.com/stoyan/msms#readme",
+  "devDependencies": {},
+  "keywords": [
+    "musescore",
+    "music"
+  ]
 }

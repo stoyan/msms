@@ -21,6 +21,7 @@ const motives = {
 // we want motive A to happen twice in the new score,
 // motive C to happen 4 times and so on
 const distribution = 'AADDFFEEEBGHICCCC';
+const OUT = 'out/';
 /**
  * Configuration end
  */
@@ -64,6 +65,10 @@ while (combinations.size < MAX) {
   }
 }
 
+if (!fs.existsSync(OUT)) {
+  fs.mkdirSync(OUT);
+}
+
 combinations.forEach((combo) => {
   // first and last measures are always the same
   const last = origMeasures[origMeasures.length - 1];
@@ -80,5 +85,5 @@ combinations.forEach((combo) => {
   source.museScore.Score.Staff.Measure = newMeasures;
   source.museScore.Score.Staff.VBox.Text[0].text._text = combo;
 
-  fs.writeFileSync('out/' + combo + '.mscx', convert.js2xml(source, options));
+  fs.writeFileSync(OUT + combo + '.mscx', convert.js2xml(source, options));
 });
