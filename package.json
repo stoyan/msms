@@ -1,0 +1,13 @@
+{
+  "name": "msms",
+  "version": "1.0.0",
+  "description": "MuseScore Measure Shuffler",
+  "main": "msms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stoyan <ssttoo@ymail.com>",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
