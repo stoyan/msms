@@ -1,6 +1,6 @@
 {
   "name": "msms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MuseScore Measure Shuffler",
   "main": "msms.js",
   "scripts": {
